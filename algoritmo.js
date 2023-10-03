@@ -1,24 +1,15 @@
-class persona {
-    riegaLas(plantas) {
-        console.log("riego las " + plantas.getNombre());
-    }
-}
 
-class planta {
-    #nombre = "def nombre";
-    
-    getNombre() {
-        return this.#nombre;
-    }
-    setNombre(nombre) {
-        this.#nombre = nombre;
-    }
-}
+/* const Persona = require("./Persona.js");
+const planta = require("./Planta.js"); */
 
+import { Persona } from "./persona.js";
+import { Planta } from "./planta.js";
 
-
-const maria = new persona();
-const plantas = new planta();
+ 
+const maria = new Persona();
+const plantas = new Planta();
 plantas.setNombre("Margaritas");
+maria.setNombre("maria");
 maria.riegaLas(plantas);
+
 
